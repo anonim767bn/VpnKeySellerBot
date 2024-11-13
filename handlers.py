@@ -1,8 +1,13 @@
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
-from aiogram.utils.i18n import gettext as _
+import texts
+import keyboards
+
 
 async def start(message: Message, state: FSMContext):
     await message.answer(
-        _("hello, {name}!").format(name=message.from_user.full_name)
+        await texts.get_start_message(
+            user = message.from_user.full_name
+        ),
+        reply_markup = await keyboards.get_start_keyboard()
     )

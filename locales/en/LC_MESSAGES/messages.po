@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-11-13 14:01+0300\n"
+"POT-Creation-Date: 2024-11-13 20:13+0300\n"
 "PO-Revision-Date: 2024-11-13 12:14+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,7 +18,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: handlers.py:7
-msgid "hello, {name}!"
+#: constants.py:6
+msgid "Let's start 🚀"
 msgstr ""
+
+#: texts.py:4
+msgid ""
+"👋 <b>Hello, {user}!</b>\n"
+"\n"
+"Here you can buy a <b>VPN</b> subscription 🛡️\n"
+"Tap the button below this message to continue ⬇️"
+msgstr ""
+
+#~ msgid "hello, {name}!"
+#~ msgstr ""
+
+#~ msgid "Buy subscription 💰"
+#~ msgstr ""
 
