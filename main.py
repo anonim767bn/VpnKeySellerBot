@@ -17,7 +17,7 @@ async def main():
     dp = Dispatcher(storage=storage)
 
 
-    dp.message.middleware(CustomI18nMiddleware(i18n))
+    CustomI18nMiddleware(i18n).setup(dp)
 
     dp.include_router(user_router)
 
