@@ -23,3 +23,36 @@ async def get_agreement_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         inline_keyboard = Keyboard
     )
+
+
+async def get_agree_with_terms_keyboard() -> InlineKeyboardMarkup:
+    Keyboard = [
+        [
+            InlineKeyboardButton(text = str(constants.PERSONAL_ACCOUNT_INLINE_BUTTON_TEXT), callback_data = constants.PERSONAL_ACCOUNT_INLINE_BUTTON_CALLBACK)
+        ]
+    ]
+    return InlineKeyboardMarkup(
+        inline_keyboard=Keyboard
+    )
+
+
+async def get_disagree_with_terms_keyboard() -> InlineKeyboardMarkup:
+    Keyboard = [
+        [
+            InlineKeyboardButton(text = str(constants.LETS_START_AGAING_INLINE_BUTTON_TEXT), callback_data = constants.LETS_START_AGAING_INLINE_BUTTON_CALLBACK)
+        ]
+    ]
+    return InlineKeyboardMarkup(
+        inline_keyboard = Keyboard
+    )
+
+
+async def get_personal_account_keyboard() -> InlineKeyboardMarkup:
+    Keyboard = [
+        [
+            InlineKeyboardButton(text = str(constants.MY_SUBSCRIPTION_BUTTON_TEXT), callback_data = constants.MY_SUBSCRIPTION_BUTTON_CALLBACK),
+        ]
+    ]
+    return InlineKeyboardMarkup(
+        inline_keyboard = Keyboard
+    )
