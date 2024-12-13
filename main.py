@@ -8,6 +8,7 @@ from middlewares import CustomI18nMiddleware
 from config import settings
 import constants
 from routers import user_router
+from contextlib import asynccontextmanager
 
 i18n = I18n(path=constants.LOCALES_PATH)
 
@@ -22,6 +23,11 @@ async def main():
     dp.include_router(user_router)
 
     await dp.start_polling(bot)
+
+
+@asynccontextmanager
+def aa():
+    pass
 
 if __name__ == '__main__':
     asyncio.run(main())
