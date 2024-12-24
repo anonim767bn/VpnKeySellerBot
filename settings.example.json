@@ -1,0 +1,13 @@
+[
+    {
+        "host": "localhost",
+
+        "username": "admin",
+        "password": "admin",
+        "inbounds": [
+            1
+        ],
+        "region": "us"
+
+    }
+]
